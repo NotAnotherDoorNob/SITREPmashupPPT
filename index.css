@@ -1,0 +1,204 @@
+/* CSS Normalize -------------------------------------------------------------------------------------------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.2;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* QLIK Stuff -------------------------------------------------------------------------------------------------------*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 45px 45px 0;
+}
+
+.qvplaceholder,
+.qvobject {
+  flex: 1 1 auto;
+  height: 300px;
+  min-width: 400px;
+  margin: 45px 0 0 45px;
+}
+
+#popup {
+  background-color: #c3534b;
+  color: #ffffff;
+  position: fixed;
+  max-width: 250px;
+  padding: 10px;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+  display: none;
+  border-radius: 5px;
+  z-index: 6;
+  font-family: sans-serif;
+}
+
+.close {
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+
+.close:hover {
+  opacity: 0.5;
+}
+
+#popupText {
+  margin-right: 23px;
+}
+
+/* Variables -------------------------------------------------------------------------------------------------------*/
+
+:root {
+  --navy-blue: #1f366d;
+  --mc-red: #940000;
+  --small-bis-yellow: #FFFF01;
+  font-size: 16px;
+}
+
+/* Fonts -------------------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* Main Elements -------------------------------------------------------------------------------------------------------*/
+
+body {
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: Calibri, Arial, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+main {
+    width: 11in;
+    height: 8.5in;
+    border:#000 1px solid;
+    padding: 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+/* Main Elements -------------------------------------------------------------------------------------------------------*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 24px;
+}
+
+.header {
+    height: 74px;
+}
+
+.row__label {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    background-color: var(--small-bis-yellow);
+}
+
+.row__data {
+    width: 108px;
+    background-color: #5b5b5b;
+}
+
+/* Main Elements -------------------------------------------------------------------------------------------------------*/
+
+.KPI__SmallBis {
+    flex: 1;
+    margin: 0 8px 0 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.KPI__SmallBis:last-child {
+    margin-right: 0;
+  }
+
+  .KPI__SmallBis__label {
+    height: 60px;
+    background-color: #008001;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .KPI__SmallBis__label:last-child {
+    font-size: 1rem;
+  }
+
+  .KPI__SmallBis__pieChart {
+    flex: auto;
+  }
+  
