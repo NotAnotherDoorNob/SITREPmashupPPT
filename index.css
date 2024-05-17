@@ -106,7 +106,11 @@ a:not([class]) {
 :root {
   --navy-blue: #1f366d;
   --mc-red: #940000;
+  --ships-grey: #BFBFBF;
+  --personnel-orange: #FFC000;
+  --budget-green: #91D14E;
   --small-bis-yellow: #FFFF01;
+  --social-blue: #9EC3E7;
   font-size: 16px;
 }
 
@@ -145,7 +149,6 @@ main {
 .row {
     display: flex;
     flex-direction: row;
-
     margin-bottom: 24px;
 }
 
@@ -160,7 +163,6 @@ main {
     align-items: center;
     justify-content: center;
     margin-right: 16px;
-    background-color: var(--small-bis-yellow);
 }
 
 .row__data {
@@ -168,7 +170,34 @@ main {
     background-color: #5b5b5b;
 }
 
-/* Main Elements -------------------------------------------------------------------------------------------------------*/
+/* Small Business -------------------------------------------------------------------------------------------------------*/
+
+.KPI__Main {
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: #000 solid 1px;
+}
+
+.KPI__Main__label {
+  padding: 0 16px;
+  height: 30px;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.KPI__Main__label p{
+font-size: 24px;
+}
+
+
+
+/* Small Business -------------------------------------------------------------------------------------------------------*/
 
 .KPI__SmallBis {
     flex: 1;

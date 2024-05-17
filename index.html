@@ -21,52 +21,54 @@
 <body>
   <main>
     <div class="row header">
-        <div class="row__label">
-            <h1>
-                Small Business
+        <div class="row__label" style="background-color: var(--navy-blue)">
+            <h1 style="color: white;">
+                Overview
             </h1>
         </div>
         <div class="row__data"></div>
     </div>
-    <div class="row" style="height: 286px;">
-        <div class="KPI__SmallBis">
-            <div class="KPI__SmallBis__pieChart"></div>
-            <div class="KPI__SmallBis__label">
-                <div>1,000,000,000</div>
-                <div>Small Business</div>
+    <div class="row" style="height: 312px; gap: 24px;">
+        <div class="KPI__Main">
+            <div class="KPI__Main__label" style="background-color: var(--ships-grey)">
+                <p>Ships:</p>
+                <div style="width: 124px; display:flex; flex-direction: row; justify-content: space-between;">
+                    <p>000</p>
+                    <p>000</p>
+                </div>
             </div>
         </div>
-        <div class="KPI__SmallBis">
-            <div class="KPI__SmallBis__pieChart"></div>
-            <div class="KPI__SmallBis__label">
-                <div>1,000,000,000</div>
-                <div>Small Disadvantaged</div>
-            </div>
-        </div>
-        <div class="KPI__SmallBis">
-            <div class="KPI__SmallBis__pieChart"></div>
-            <div class="KPI__SmallBis__label">
-                <div>1,000,000,000</div>
-                <div>Service-Disabled</div>
-            </div>
-        </div>
-        <div class="KPI__SmallBis">
-            <div class="KPI__SmallBis__pieChart"></div>
-            <div class="KPI__SmallBis__label">
-                <div>1,000,000,000</div>
-                <div>Woman Owned</div>
-            </div>
-        </div>
-        <div class="KPI__SmallBis">
-            <div class="KPI__SmallBis__pieChart"></div>
-            <div class="KPI__SmallBis__label">
-                <div>1,000,000,000</div>
-                <div>HUBZone</div>
+        <div class="KPI__Main" style="flex: 2;">
+            <div class="KPI__Main__label" style="background-color: var(--personnel-orange)">
+                <div style="width: 124px; display:flex; flex-direction: row; ">
+                    <p style="padding: 0 12px 0 0;">Personnel:</p>
+                    <p>000,000</p>
+                </div>
+                <div style="width: 100px; display:flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                    <p style="color: var(--navy-blue); font-size: 18px;">USN</p>
+                    <p style="color: var(--mc-red); font-size: 18px;">USMC</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row" style="height: 298px;">
-
+    <div class="row" style="height: 256px; gap: 24px;">
+        <div class="KPI__Main">
+            <div class="KPI__Main__label" style="background-color: var(--budget-green); justify-content: center;">
+                <p>FY24 Budget</p>
+            </div>
+        </div>
+        <div class="KPI__Main">
+            <div class="KPI__Main__label" style="background-color: var(--small-bis-yellow); justify-content: center;">
+                <p>Small Business</p>
+            </div>
+            
+        </div>
+        <div class="KPI__Main">
+            <div class="KPI__Main__label" style="background-color: var(--social-blue); justify-content: center;">
+                <p>Top Social Media</p>
+            </div>
+            
+        </div>
     </div>
   </main>
 <!--Error Popup-->
